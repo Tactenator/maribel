@@ -1,6 +1,6 @@
 const Footer = () => {
     return ( 
-        <footer className="flex justify-evenly bg-sky-300/50 p-12 text-black font-Afterglow text-2xl">
+        <footer className="flex justify-evenly bg-sky-400/50 p-12 text-black font-Afterglow text-2xl">
             <div>
                 <h2>Working Hours</h2>
             </div>
