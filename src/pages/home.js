@@ -42,7 +42,7 @@ const Home = () => {
                 <div id='review-container' className='flex px-48 gap-24'>
                     <div className='shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-10'>
                         <img src={Bravo} alt="Bravo Italian Restaurant Logo" className='mx-auto'></img>
-                        <div id='review' className='p-10'>
+                        <div id='review' className='p-3'>
                             <p className='indent-8'>
                                 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -54,7 +54,7 @@ const Home = () => {
                     </div>
                     <div className='shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-10'>
                         <img src={Mots} alt="Mouth of the South Logo" className='mx-auto'></img>
-                        <div id='review' className='p-5'>
+                        <div id='review' className='p-3'>
                         <p className='indent-8'>
                             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -66,7 +66,7 @@ const Home = () => {
                     </div>
                     <div className='shadow-[0_3px_10px_rgb(0,0,0,0.2)] p-10'>
                         <img src={Mlcdc} alt="Something logo" className='mx-auto'></img>
-                        <div id='review' className='p-10'>
+                        <div id='review' className='p-3'>
                              <p className='indent-8'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
