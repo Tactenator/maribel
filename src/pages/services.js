@@ -1,3 +1,4 @@
+import Blurb from '../components/blurb';
 import Test from '../images/about2.jpg'
 
 const Services = () => {
@@ -56,6 +57,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
+            <Blurb />
         </>
      );
 }
