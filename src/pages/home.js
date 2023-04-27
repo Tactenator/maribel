@@ -5,6 +5,7 @@ import Cleaning from '../images/cleaning.jpg';
 import Bravo from '../images/bravologo.png'
 import Mots from '../images/motslogo.png';
 import Mlcdc from '../images/mlcdclogog.png';
+import Contact from '../components/contact';
 
 
 const Home = () => {
@@ -71,7 +72,7 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            <div id='testimonials-container' className='text-black p-20 font-Afterglow flex justify-center bg-stone-100 gap-10'>
+            <div id='testimonials-container' className='text-black py-28 px-20 font-Afterglow flex justify-center bg-stone-100 gap-10'>
                 <div className="text-3xl">
                     <h1 className="mb-10 font-Monarda">Brands That Trust Us</h1>
                     <div id='brands-container' className='grid grid-cols-2 gap-5'>
@@ -94,13 +95,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div id='requestInfo-container' className='bg-sky-400 p-9 text-center text-white font-Afterglow'>
-                <h1 className='text-4xl'>Ready to get Started? Call Now or Click Below to send us a message!</h1>
-                <h1 className='text-3xl py-5'>402-203-7491</h1>
-                <button className='border-solid border-2 border-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                                   hover:bg-white hover:text-sky-500 hover:border-solid hover:border-2 hover:border-sky-400/50
-                '>Contact Us</button>
-            </div>
+            <Contact />
         </>
      );
 }

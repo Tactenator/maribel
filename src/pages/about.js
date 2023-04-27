@@ -1,4 +1,5 @@
 import Blurb from '../components/blurb';
+import Contact from '../components/contact';
 import Main from '../images/about1.jpg';
 import Left from '../images/about2.jpg';
 import Right from '../images/about3.jpg';
@@ -37,6 +38,7 @@ const About = () => {
                 </div>
             </div>
             <Blurb />
+            <Contact />
         </>
      );
 }
