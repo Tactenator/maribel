@@ -1,6 +1,7 @@
 import { useState } from 'react';
 
 import LandingPage from '../images/home.jpg';
+import newLanding from '../images/newLandingPage.jpg'
 import Cleaning from '../images/cleaning.jpg';
 import Bravo from '../images/bravologo.png'
 import Mots from '../images/motslogo.png';
@@ -36,20 +37,21 @@ const Home = () => {
     
     return ( 
         <>
-            <div id="home-container" className='flex'>
-                <img className="w-full" src={LandingPage} alt="Comfy, clean house with blue sofa"></img>
-                <div id='landingPage-text' className='flex flex-col items-center mx-auto p-10 gap-16 font-Afterglow w-full'>
-                    <h1 className='text-5xl text-sky-500 font-Monarda'>Maribel's Cleaning Service</h1>
-                    <h2 className='text-3xl font-Afterglow'>Your satisfaction is our priority!</h2>
-                    <div className='text-center'>
-                        <h3 className='text-3xl mb-4 '>Call Us Today!</h3>
-                        <a href='tel:4022037491' className='text-4xl underline transition-all 
-                        duration-200 hover:text-sky-500'>(402)203-7491</a>
+            <div id="home-container" className='flex flex-col items-center pt-40 h-[100vh] relative'>
+                <img src={newLanding} alt="Comfy, clean house with blue sofa" className='absolute top-0 left-0 h-[100vh] w-[100vw] object-cover brightness-50'></img>
+                {/* <img className="w-full" src={LandingPage} alt="Comfy, clean house with blue sofa"></img> */}
+                <div id='landingPage-text' className='flex flex-col items-center text-white mx-auto p-10 gap-16 font-Afterglow w-full z-10'>
+                    <h1 className='text-6xl text-sky-500 font-Monarda'>Maribel's Cleaning Service</h1>
+                    <h2 className='text-4xl font-Afterglow'>Your satisfaction is our priority!</h2>
+                    <div className='flex flex-row gap-20 pt-20'>
+                        <button className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                                        hover:bg-white hover:text-sky-500
+                        '>Our Services</button>
+                        <button className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                                        hover:bg-white hover:text-sky-500
+                        '>Request a Free Estimate</button>
                     </div>
-                    <h3 className='text-3xl'>Click Below to Receive your Free Estimate</h3>
-                    <button className='border-solid border-2 border-sky-400 py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                                       hover:bg-sky-500 hover:text-white
-                    '>Request a Free Estimate</button>
+                    
                 </div>
             </div>
             <div id='blurb-container'>

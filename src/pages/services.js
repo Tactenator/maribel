@@ -1,5 +1,11 @@
 import Blurb from '../components/blurb';
-import Test from '../images/about2.jpg'
+import Commercial from '../images/commercial.jpg'
+import Movein from '../images/movein.jpg'
+import Pressure from '../images/pressure.jpg';
+import After from '../images/afterhours.jpg'
+import Office from '../images/office.jpg'
+import Restaurant from '../images/restaurant.jpg'
+import Contact from '../components/contact';
 
 const Services = () => {
     return ( 
@@ -9,7 +15,7 @@ const Services = () => {
             </div>
             <div id="servicesContainer" className="grid grid-cols-3 content-center justify-center place-items-center p-10">
                 <div id="service" className="w-4/5 h-auto mb-20 bg-stone-100">
-                    <img src={Test} alt="Test image for design purposes"></img>
+                    <img src={Commercial} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5'>
                         <h1 className='text-center text-2xl font-bold my-5'>Commercial Cleaning</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
@@ -17,7 +23,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div id="service" className="w-4/5 h-auto mb-20 bg-stone-100">
-                    <img src={Test} alt="Test image for design purposes"></img>
+                    <img src={Movein} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5'>
                         <h1 className='text-center text-2xl font-bold my-5'>Move In/Out Service</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
@@ -25,7 +31,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div id="service" className="w-4/5 h-auto mb-20 bg-stone-100">
-                    <img src={Test} alt="Test image for design purposes"></img>
+                    <img src={Pressure} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5'>
                         <h1 className='text-center text-2xl font-bold my-5'>Pressure Cleaning</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
@@ -33,7 +39,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div id="service" className="w-4/5 h-auto mb-20 bg-stone-100">
-                    <img src={Test} alt="Test image for design purposes"></img>
+                    <img src={After} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5'>
                         <h1 className='text-center text-2xl font-bold my-5'>After Hours Cleaning</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
@@ -41,7 +47,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div id="service" className="w-4/5 h-auto mb-20 bg-stone-100">
-                    <img src={Test} alt="Test image for design purposes"></img>
+                    <img src={Office} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5'>
                         <h1 className='text-center text-2xl font-bold my-5'>Office Cleaning</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
@@ -49,7 +55,7 @@ const Services = () => {
                     </div>
                 </div>
                 <div id="service" className="w-4/5 h-auto mb-20 bg-stone-100">
-                    <img src={Test} alt="Test image for design purposes"></img>
+                    <img src={Restaurant} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5'>
                         <h1 className='text-center text-2xl font-bold my-5'>Restaurant Services</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
@@ -58,6 +64,7 @@ const Services = () => {
                 </div>
             </div>
             <Blurb />
+            <Contact />
         </>
      );
 }

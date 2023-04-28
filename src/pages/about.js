@@ -1,14 +1,16 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Blurb from '../components/blurb';
 import Contact from '../components/contact';
 import Main from '../images/about1.jpg';
 import Left from '../images/about2.jpg';
 import Right from '../images/about3.jpg';
+import { faCheck } from '@fortawesome/free-solid-svg-icons';
 
 
 const About = () => {
     return ( 
         <>
-            <div id="aboutusBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl">
+            <div id="aboutusBanner" className="py-16 pl-24 bg-sky-400/50 text-white font-Monarda text-4xl">
                 <h1>About Us</h1>
             </div>
             <div id="aboutUsContainer" className="flex justify-center p-32 ml-32 gap-20">
@@ -29,11 +31,11 @@ const About = () => {
                     </h2>
                     <h2 className='text-3xl font-Afterglow w-3/4 font-bold mb-5'>Our Mission:</h2>
                     <ul className=''>
-                        <li>Focus on your needs</li>
-                        <li>Provide high quality and consistent services</li>
-                        <li>Maintain standards for safety for our cleaners</li>
-                        <li>Make you feel confident and happy of a job well done</li>
-                        <li>Make you an extremely satisfied customer</li>
+                        <li className='text-2xl'><FontAwesomeIcon className="text-sky-500" icon={faCheck} /> Focus on your needs</li>
+                        <li className='text-2xl'><FontAwesomeIcon className="text-sky-500" icon={faCheck} /> Provide high quality and consistent services</li>
+                        <li className='text-2xl'><FontAwesomeIcon className="text-sky-500" icon={faCheck} /> Maintain standards for safety for our cleaners</li>
+                        <li className='text-2xl'><FontAwesomeIcon className="text-sky-500" icon={faCheck} /> Make you feel confident and happy of a job well done</li>
+                        <li className='text-2xl'><FontAwesomeIcon className="text-sky-500" icon={faCheck} /> Make you an extremely satisfied customer</li>
                     </ul>
                 </div>
             </div>
