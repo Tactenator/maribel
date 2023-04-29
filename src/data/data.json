@@ -1,23 +1,22 @@
 {
-    "commercial": 
-    {
-        "name": "Stuff"
-    },
-    "moveIn": 
-    {
-        "name": "Stuff"
-    },
-    "pressure": 
-    {
-        "name":"Stuff"
-    },
-    "after": {
-        "name": "Stuff"
-    },
-    "office": {
-        "name":"Stuff"
-    }, 
-    "restaurant": {
-        "name": "Stuff"
-    }
+    "services": [
+        {
+            "name": "Commercial Cleaning"
+        },
+        {
+            "name": "Move In/Out Service"
+        },
+        {
+            "name": "Pressure Cleaning"
+        },
+        {
+            "name": "After Hours"
+        },
+        {
+            "name": "Office Cleaning"
+        },
+        {
+            "name": "Restaurant Cleaning"
+        }
+    ] 
 }

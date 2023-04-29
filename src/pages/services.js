@@ -14,6 +14,7 @@ import Contact from '../components/contact';
 const Services = () => {
 
     const [data, setData] = useState();
+    const [count, setCount] = useState('0');
     const modalRef = useRef();
 
     useEffect(() => {
@@ -28,6 +29,7 @@ const Services = () => {
     }
     
     function handleModal(e) {
+        setCount(e.target.dataset.value)
         const modal = modalRef.current
         if(modal.style.right === '0px'){
             modal.style.right = '-1000px'
@@ -93,7 +95,7 @@ const Services = () => {
             </div>
             {data && 
                 <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='absolute top-0  h-[100vh] w-1/3 bg-white transition-all duration-300'>
-                    {data[0].name}
+                  
                 </div>
             }
             <Blurb />
