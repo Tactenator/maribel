@@ -29,6 +29,7 @@ const Services = () => {
     }
     
     function handleModal(e) {
+        console.log(e.target)
         setCount(e.target.dataset.value)
         const modal = modalRef.current
         if(modal.style.right === '0px'){
@@ -45,11 +46,11 @@ const Services = () => {
             </div>
             <div id="servicesContainer" className="grid grid-cols-3 content-center justify-center place-items-center p-10">
                 <div id="service" data-value="0" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
-                    <img src={Commercial} alt="Test  for design purposes"></img>
-                    <div className='px-5 pb-5'>
-                        <h1 className='text-center text-2xl font-bold my-5'>Commercial Cleaning</h1>
-                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
-                        <p>Scrubbing, vacuuming, you name it. We're here for all your basic cleaning needs.  </p>
+                    <img className="pointer-events-none" src={Commercial} alt="Test  for design purposes"></img>
+                    <div className='px-5 pb-5 pointer-events-none'>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Commercial Cleaning</h1>
+                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
+                        <p className='pointer-events-none'>Scrubbing, vacuuming, you name it. We're here for all your basic cleaning needs.  </p>
                     </div>
                 </div>
                 <div id="service" data-value="1" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
