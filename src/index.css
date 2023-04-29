@@ -11,3 +11,9 @@
     font-family: Afterglow; 
     src: url("./fonts/Afterglow.ttf"); 
   }
+
+#root {
+  position: relative; 
+  overflow-x: hidden;
+}
+
