@@ -29,9 +29,8 @@ const Services = () => {
     }
     
     function handleModal(e) {
-        console.log(e.target)
         setCount(e.target.dataset.value)
-        const modal = modalRef.current
+        const modal = modalRef.current;
         if(modal.style.right === '0px'){
             modal.style.right = '-1000px'
         }
@@ -94,11 +93,9 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            {data && 
-                <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='absolute top-0  h-[100vh] w-1/3 bg-white transition-all duration-300'>
-                  
-                </div>
-            }
+            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='absolute top-0  h-[100vh] w-1/3 bg-white transition-all duration-300'>
+              
+            </div>
             <Blurb />
             <Contact />
         </>
