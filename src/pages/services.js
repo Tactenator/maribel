@@ -24,13 +24,15 @@ const Services = () => {
     async function fetchData() { 
         const response = await fetch("http://localhost:8000/services")
         const data = await response.json()
-        console.log(data)
         setData(data)
     }
     
     function handleModal(e) {
-        setCount(e.target.dataset.value)
         const modal = modalRef.current;
+        if(e.target.dataset.value) {
+            modal.style.right = '1000px'; 
+        }
+        setCount(e.target.dataset.value)
         if(modal.style.right === '0px'){
             modal.style.right = '-1000px'
         }
@@ -53,48 +55,52 @@ const Services = () => {
                     </div>
                 </div>
                 <div id="service" data-value="1" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
-                    <img src={Movein} alt="Test  for design purposes"></img>
-                    <div className='px-5 pb-5'>
-                        <h1 className='text-center text-2xl font-bold my-5'>Move In/Out Service</h1>
-                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
+                    <img className="pointer-events-none" src={Movein} alt="Test  for design purposes"></img>
+                    <div className='px-5 pb-5 pointer-events-none'>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Move In/Out Service</h1>
+                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
                         <p>We'll make sure we leave the place you're leaving better than when you moved in. </p>
                     </div>
                 </div>
                 <div id="service" data-value="2" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
-                    <img src={Pressure} alt="Test  for design purposes"></img>
-                    <div className='px-5 pb-5'>
-                        <h1 className='text-center text-2xl font-bold my-5 '>Pressure Cleaning</h1>
-                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
+                    <img className="pointer-events-none" src={Pressure} alt="Test  for design purposes"></img>
+                    <div className='px-5 pb-5 pointer-events-none'>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Pressure Cleaning</h1>
+                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
                         <p>Need something a little more heavy duty? We got you covered.  </p>
                     </div>
                 </div>
                 <div id="service" data-value="3" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
-                    <img src={After} alt="Test for design purposes"></img>
-                    <div className='px-5 pb-5'>
-                        <h1 className='text-center text-2xl font-bold my-5'>After Hours Cleaning</h1>
-                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
+                    <img className="pointer-events-none" src={After} alt="Test for design purposes"></img>
+                    <div className='px-5 pb-5 pointer-events-none'>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>After Hours Cleaning</h1>
+                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
                         <p>Closing up shop? We'll take care of all your end of the day cleaning needs.  </p>
                     </div>
                 </div>
                 <div id="service" data-value="4" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
-                    <img src={Office} alt="Test for design purposes"></img>
-                    <div className='px-5 pb-5'>
-                        <h1 className='text-center text-2xl font-bold my-5'>Office Cleaning</h1>
-                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
+                    <img className="pointer-events-none" src={Office} alt="Test for design purposes"></img>
+                    <div className='px-5 pb-5 pointer-events-none'>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Office Cleaning</h1>
+                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px ] pointer-events-none'></div>
                         <p>We keep offices nice and tidy so you can focus more on getting the job done. </p>
                     </div>
                 </div>
                 <div id="service" data-value="5" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
-                    <img src={Restaurant} alt="Test for design purposes"></img>
-                    <div className='px-5 pb-5'>
-                        <h1 className='text-center text-2xl font-bold my-5'>Restaurant Services</h1>
-                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px]'></div>
+                    <img className="pointer-events-none" src={Restaurant} alt="Test for design purposes"></img>
+                    <div className='px-5 pb-5 pointer-events-none'>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Restaurant Services</h1>
+                        <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
                         <p>A clean restaurant is a happy one. We'll take care of all your cleaning needs. </p>
                     </div>
                 </div>
             </div>
-            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='absolute top-0  h-[100vh] w-1/3 bg-white transition-all duration-300'>
-              
+            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed top-0  h-[100vh] w-1/3 bg-white transition-all duration-300'>
+                {data && 
+                <div>
+                    <h1 className='text-2xl text-center py-10 font-bold'>{data[count].name}</h1>
+                </div>
+                }
             </div>
             <Blurb />
             <Contact />
