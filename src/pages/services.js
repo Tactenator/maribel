@@ -31,15 +31,17 @@ const Services = () => {
     
     function handleModal(e) {
         const modal = modalRef.current;
-        if(e.target.dataset.value) {
-            modal.style.right = '1000px'; 
-        }
-        setCount(e.target.dataset.value)
-        if(modal.style.right === '0px'){
-            modal.style.right = '-1000px'
-        }
-        else {
-            modal.style.right = '0px'
+        if(data){
+            if(e.target.dataset.value) {
+                modal.style.right = '1000px'; 
+            }
+            setCount(e.target.dataset.value)
+            if(modal.style.right === '0px'){
+                modal.style.right = '-1000px'
+            }
+            else {
+                modal.style.right = '0px'
+            }
         }
     }
 
@@ -102,7 +104,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed z-index 10 top-0 overflow-y-auto h-[100vh] w-1/3 bg-stone-100 transition-all duration-300'>
+            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed z-20 top-0 overflow-y-auto h-[100vh] w-1/3 bg-stone-100 transition-all duration-300'>
                 <span onClick={closeModal} 
                 className='absolute top-4 right-10 text-2xl text-white font-bold hover:cursor-pointer hover:text-black'>x</span>
                 {data && 
