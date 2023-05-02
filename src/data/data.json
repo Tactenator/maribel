@@ -1,22 +1,70 @@
 {
     "services": [
         {
-            "name": "Commercial Cleaning"
+            "name": "Commercial Cleaning",
+            "gif": "https://assets4.lottiefiles.com/packages/lf20_7ifso9nc.json", 
+            "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas libero turpis. Phasellus eleifend arcu congue purus suscipit venenatis. Suspendisse gravida fringilla turpis, a venenatis justo commodo non. Nullam suscipit mattis viverra. Phasellus varius velit eu nunc mollis, et porta tellus semper. Aliquam erat volutpat. Cras bibendum massa metus, et posuere urna scelerisque id. Donec vel luctus odio.",
+            "points": [
+                "one", 
+                "two",
+                "three", 
+                "four"
+            ]
         },
         {
-            "name": "Move In/Out Service"
+            "name": "Move In/Out Service",
+            "gif": "https://assets7.lottiefiles.com/packages/lf20_qn0GjJ.json", 
+            "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas libero turpis. Phasellus eleifend arcu congue purus suscipit venenatis. Suspendisse gravida fringilla turpis, a venenatis justo commodo non. Nullam suscipit mattis viverra. Phasellus varius velit eu nunc mollis, et porta tellus semper. Aliquam erat volutpat. Cras bibendum massa metus, et posuere urna scelerisque id. Donec vel luctus odio.",
+            "points": [
+                "one", 
+                "two",
+                "three", 
+                "four"
+            ]
         },
         {
-            "name": "Pressure Cleaning"
+            "name": "Pressure Cleaning",
+            "gif": "https://assets4.lottiefiles.com/packages/lf20_kiigtze2.json", 
+            "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas libero turpis. Phasellus eleifend arcu congue purus suscipit venenatis. Suspendisse gravida fringilla turpis, a venenatis justo commodo non. Nullam suscipit mattis viverra. Phasellus varius velit eu nunc mollis, et porta tellus semper. Aliquam erat volutpat. Cras bibendum massa metus, et posuere urna scelerisque id. Donec vel luctus odio.",
+            "points": [
+                "one", 
+                "two",
+                "three", 
+                "four"
+            ]
         },
         {
-            "name": "After Hours"
+            "name": "After Hours",
+            "gif": "https://assets4.lottiefiles.com/packages/lf20_ijqswcfu.json", 
+            "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas libero turpis. Phasellus eleifend arcu congue purus suscipit venenatis. Suspendisse gravida fringilla turpis, a venenatis justo commodo non. Nullam suscipit mattis viverra. Phasellus varius velit eu nunc mollis, et porta tellus semper. Aliquam erat volutpat. Cras bibendum massa metus, et posuere urna scelerisque id. Donec vel luctus odio.",
+            "points": [
+                "one", 
+                "two",
+                "three", 
+                "four"
+            ]
         },
         {
-            "name": "Office Cleaning"
+            "name": "Office Cleaning",
+            "gif": "https://assets4.lottiefiles.com/packages/lf20_EKUtIRMvz5.json", 
+            "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas libero turpis. Phasellus eleifend arcu congue purus suscipit venenatis. Suspendisse gravida fringilla turpis, a venenatis justo commodo non. Nullam suscipit mattis viverra. Phasellus varius velit eu nunc mollis, et porta tellus semper. Aliquam erat volutpat. Cras bibendum massa metus, et posuere urna scelerisque id. Donec vel luctus odio.",
+            "points": [
+                "one", 
+                "two",
+                "three", 
+                "four"
+            ]
         },
         {
-            "name": "Restaurant Cleaning"
+            "name": "Restaurant Cleaning",
+            "gif": "https://assets4.lottiefiles.com/packages/lf20_n1qlsec7.json", 
+            "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis egestas libero turpis. Phasellus eleifend arcu congue purus suscipit venenatis. Suspendisse gravida fringilla turpis, a venenatis justo commodo non. Nullam suscipit mattis viverra. Phasellus varius velit eu nunc mollis, et porta tellus semper. Aliquam erat volutpat. Cras bibendum massa metus, et posuere urna scelerisque id. Donec vel luctus odio.",
+            "points": [
+                "one", 
+                "two",
+                "three", 
+                "four"
+            ]
         }
     ] 
 }

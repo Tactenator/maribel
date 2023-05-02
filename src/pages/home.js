@@ -37,7 +37,7 @@ const Home = () => {
     
     return ( 
         <>
-            <div id="home-container" className='flex flex-col items-center pt-40 h-[100vh] relative'>
+            <div id="home-container" className='flex flex-col items-center pt-24 h-[100vh] relative'>
                 <img src={newLanding} alt="Comfy, clean house with blue sofa" className='absolute top-0 left-0 h-[100vh] w-[100vw] object-cover brightness-50'></img>
                 {/* <img className="w-full" src={LandingPage} alt="Comfy, clean house with blue sofa"></img> */}
                 <div id='landingPage-text' className='flex flex-col items-center text-white mx-auto p-10 gap-16 font-Afterglow w-full z-10'>

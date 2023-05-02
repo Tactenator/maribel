@@ -8,6 +8,7 @@ import After from '../images/afterhours.jpg'
 import Office from '../images/office.jpg'
 import Restaurant from '../images/restaurant.jpg'
 import Contact from '../components/contact';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 
 
@@ -24,6 +25,7 @@ const Services = () => {
     async function fetchData() { 
         const response = await fetch("http://localhost:8000/services")
         const data = await response.json()
+        console.log(data[count].points)
         setData(data)
     }
     
@@ -39,6 +41,11 @@ const Services = () => {
         else {
             modal.style.right = '0px'
         }
+    }
+
+    function closeModal() {
+        const modal = modalRef.current; 
+        modal.style.right = '-1000px'
     }
     return ( 
         <>
@@ -95,10 +102,33 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed top-0  h-[100vh] w-1/3 bg-white transition-all duration-300'>
+            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed z-index 10 top-0 overflow-y-auto h-[100vh] w-1/3 bg-stone-100 transition-all duration-300'>
+                <span onClick={closeModal} 
+                className='absolute top-4 right-10 text-2xl text-white font-bold hover:cursor-pointer hover:text-black'>x</span>
                 {data && 
                 <div>
-                    <h1 className='text-2xl text-center py-10 font-bold'>{data[count].name}</h1>
+                    <div className='text-3xl tracking-wide text-center py-10 font-bold bg-sky-500 text-white font-Afterglow'>{data[count].name}</div>
+                    <Player
+                    autoplay
+                    loop
+                    src={data[count].gif}
+                    style={{ height: '300px', width: '300px' }}
+                    />
+                    <div id="modal-information" className="px-4 py-2 bg-sky-400 text-[18px] text-white">
+                        <h1 className='text-center text-3xl my-10'>What We Offer</h1>
+                        <h4>{data[count].information}</h4>
+                        { data[count].points.map(item => ( 
+                            <div>
+                                { item }
+                            </div>
+                        ))}
+                        <h1 className='my-4 text-center text-2xl'>Want to learn more? We'd love to hear from you!</h1>
+                        <div className='flex justify-center my-10'>
+                            <button className='border-solid border-2 border-white border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                                            hover:bg-white hover:text-sky-500
+                            '>Contact Us</button>
+                        </div>
+                    </div>
                 </div>
                 }
             </div>
