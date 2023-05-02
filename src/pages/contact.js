@@ -14,7 +14,7 @@ const Contact = () => {
                         <img src={Telephone} alt="A telephone" className=''></img>
                         <div className='ml-1'>
                             <h1 className='text-2xl my-5 font-bold'>Phone</h1>
-                            <span className='text-2xl'>555 555-5555</span>
+                            <a href="tel:4022037491" className="text-2xl font-Afterglow hover:underline">402-203-7491</a>
                         </div>
                     </div>
                     <div id="info" className="">
@@ -33,7 +33,7 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <h1 className="text-center text-4xl font-Monarda my-10">Contact Us Today!</h1>
+                <h1 className="text-center text-4xl font-Monarda my-20">Contact Us Today!</h1>
                 <div id='contactContainer' className='flex justify-center gap-10 w-screen my-10'>
                     <div class="flex flex-col gap-6">
                         <div class="relative h-12 w-full min-w-[400px]">
@@ -72,7 +72,7 @@ const Contact = () => {
                 <div className="flex justify-center mb-10">
                 <button className='border-solid border-2 border-sky-400 bg-sky-500 text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
                                         hover:bg-white hover:text-sky-500
-                        '>Request a Free Estimate</button>
+                        '>Contact Us</button>
                 </div>
             </div>
         </> 
