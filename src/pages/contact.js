@@ -70,9 +70,8 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className="flex justify-center mb-10">
-                <button className='border-solid border-2 border-sky-400 bg-sky-500 text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                                        hover:bg-white hover:text-sky-500
-                        '>Contact Us</button>
+                    <button className='border-solid border-2 border-sky-400 bg-sky-500 text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200 hover:bg-white hover:text-sky-500
+                    '>Contact Us</button>
                 </div>
             </div>
         </> 

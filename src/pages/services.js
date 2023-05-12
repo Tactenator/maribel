@@ -23,10 +23,9 @@ const Services = () => {
     }, [])
     
     async function fetchData() { 
-        const response = await fetch("http://localhost:8000/services")
+        const response = await fetch("https://api.npoint.io/1060df625b0ca340c3f9")
         const data = await response.json()
-        console.log(data[count].points)
-        setData(data)
+        setData(data.services)
     }
     
     function handleModal(e) {
