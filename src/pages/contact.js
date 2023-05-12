@@ -65,7 +65,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <div>
-                    <textarea rows="8" cols="40" placeholder='How can we help?' 
+                    <textarea rows="8" cols="30" placeholder='How can we help?' 
                     className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none min-w-[300px] md:min-w-[500px] text-sm text-gray-900'></textarea>
                     </div>
                 </div>
