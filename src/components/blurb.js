@@ -6,7 +6,7 @@ import HandShake from '../images/handshake.svg';
 const Blurb = () => {
     return ( 
         <>
-        <div id="blurbContainer" className='flex justify-evenly items-center p-20 relative'>
+        <div id="blurbContainer" className='flex flex-col md:flex-row gap-10 md:gap-0 justify-evenly items-center p-20 relative'>
                 <div className='bg-[url("https://quanticalabs.com/wp_themes/cleanmate/files/2017/11/image_03-3.jpg?id=1145")] absolute w-full h-full brightness-50'></div>
                 <div id="blurbCard" className='bg-white w-[350px] h-[300px] text-center p-8 z-10 shadow-[0_3px_10px_rgb(0,0,0,0.2)]'>
                     <img src={Clean} alt="A brush and handle used for cleaning" className='w-1/5 mx-auto'></img>

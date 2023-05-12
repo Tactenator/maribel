@@ -5,27 +5,27 @@ import Mail from '../images/mail.svg';
 const Contact = () => {
     return ( 
         <>
-            <div id="servicesBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl">
+            <div id="servicesBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl text-center">
                 <h1>Contact Us</h1>
             </div>
             <div id="contactContainer">
-                <div id="info-container" className="flex justify-evenly py-10 bg-stone-100 font-Afterglow">
-                    <div id="info" className="relative">
-                        <img src={Telephone} alt="A telephone" className=''></img>
+                <div id="info-container" className="flex flex-col md:flex-row md:justify-evenly py-10 bg-stone-100 font-Afterglow">
+                    <div id="info" className="text-center md:text-left mb-10 md:mb-0">
+                        <img src={Telephone} alt="A telephone"  className="mx-auto"></img>
                         <div className='ml-1'>
                             <h1 className='text-2xl my-5 font-bold'>Phone</h1>
                             <a href="tel:4022037491" className="text-2xl font-Afterglow hover:underline">402-203-7491</a>
                         </div>
                     </div>
-                    <div id="info" className="">
-                        <img src={Mail} alt="An envelope for sending mail"></img>
+                    <div id="info" className="text-center md:text-left mb-10 md:mb-0">
+                        <img src={Mail} alt="An envelope for sending mail" className="mx-auto"></img>
                         <div className='ml-1'>
                             <h1 className='text-2xl my-5 font-bold'>Email</h1>
                             <span className='text-2xl'>cleaning1now@gmail.com</span>
                         </div>
                     </div>
-                    <div id="info" className="">
-                        <img src={Hours} alt="A clock"></img>
+                    <div id="info" className="text-center md:text-left mb-10 md:mb-0">
+                        <img src={Hours} alt="A clock"  className="mx-auto"></img>
                         <div className='ml-1'>
                             <h1 className='text-2xl my-5 font-bold'>Hours</h1>
                             <div className="text-2xl">Weekdays: 8AM - 5PM</div>
@@ -34,9 +34,9 @@ const Contact = () => {
                     </div>
                 </div>
                 <h1 className="text-center text-4xl font-Monarda my-20">Contact Us Today!</h1>
-                <div id='contactContainer' className='flex justify-center gap-10 w-screen my-10'>
-                    <div class="flex flex-col gap-6">
-                        <div class="relative h-12 w-full min-w-[400px]">
+                <div id='contactContainer' className='flex flex-col md:flex-row justify-center items-center gap-10 w-screen my-10'>
+                    <div class="flex flex-col gap-6 px-6">
+                        <div class="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
                             <input
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-gray-50 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-sky-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" "
@@ -45,7 +45,7 @@ const Contact = () => {
                             Name
                             </label>
                         </div>
-                        <div class="relative h-12 w-full min-w-[400px]">
+                        <div class="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
                             <input
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-gray-50 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-sky-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" "
@@ -54,7 +54,7 @@ const Contact = () => {
                             Email Address
                             </label>
                         </div>
-                        <div class="relative h-12 w-full min-w-[400px]">
+                        <div class="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
                             <input
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-gray-50 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-sky-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" "
@@ -65,8 +65,8 @@ const Contact = () => {
                         </div>
                     </div>
                     <div>
-                    <textarea rows="8" cols="50" placeholder='How can we help?' 
-                    className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none w-[500px] text-sm text-gray-900'></textarea>
+                    <textarea rows="8" cols="40" placeholder='How can we help?' 
+                    className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none min-w-[300px] md:min-w-[500px] text-sm text-gray-900'></textarea>
                     </div>
                 </div>
                 <div className="flex justify-center mb-10">

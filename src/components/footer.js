@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
     return ( 
-        <footer className="flex justify-evenly bg-sky-500 pt-10 pb-32 px-20 text-white font-Afterglow text-2xl">
+        <footer className="flex flex-col md:flex-row justify-evenly bg-sky-500 pt-10 pb-32 px-20 text-white font-Afterglow text-2xl">
             <div>
                 <h1 className='mb-5 font-bold font-Monarda text-3xl'>Maribel's Cleaning Service</h1>
                 <ul className="flex flex-col gap-2 ml-5">
@@ -12,7 +12,7 @@ const Footer = () => {
                     <Link className="text-2xl font-Afterglow transition-all duration-200 hover:underline" to="/contact">Contact</Link>
                 </ul>
             </div>
-            <div className="flex flex-row justify-evenly gap-32">
+            <div className="flex flex-col md:flex-row pt-10 md:pt-0 justify-evenly gap-16">
                 <div>
                     <h2 className='font-bold text-2xl mb-10 underline'>Working Hours</h2>
                     <ul>

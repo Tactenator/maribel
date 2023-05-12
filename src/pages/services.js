@@ -51,10 +51,10 @@ const Services = () => {
     }
     return ( 
         <>
-        <div id="servicesBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl">
+        <div id="servicesBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl text-center">
                 <h1>Our Services</h1>
             </div>
-            <div id="servicesContainer" className="grid grid-cols-3 content-center justify-center place-items-center p-10">
+            <div id="servicesContainer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 content-center justify-center place-items-center p-10">
                 <div id="service" data-value="0" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Commercial} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
@@ -104,7 +104,7 @@ const Services = () => {
                     </div>
                 </div>
             </div>
-            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed z-20 top-0 overflow-y-auto h-[100vh] w-1/3 bg-stone-100 transition-all duration-300'>
+            <div id="modal" ref={modalRef} style={{right: '-1000px'}} className='fixed z-20 top-0 overflow-y-auto h-[100vh] w-[100vw] md:w-1/3 bg-stone-100 transition-all duration-300'>
                 <span onClick={closeModal} 
                 className='absolute top-4 right-10 text-2xl text-white font-bold hover:cursor-pointer hover:text-black'>x</span>
                 {data && 

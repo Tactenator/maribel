@@ -10,18 +10,18 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons';
 const About = () => {
     return ( 
         <>
-            <div id="aboutusBanner" className="py-16 pl-24 bg-sky-400/50 text-white font-Monarda text-4xl">
+            <div id="aboutusBanner" className="py-16  bg-sky-400/50 text-white text-center font-Monarda text-4xl">
                 <h1>About Us</h1>
             </div>
-            <div id="aboutUsContainer" className="flex justify-center p-32 ml-32 gap-20">
+            <div id="aboutUsContainer" className="flex flex-col md:flex-row justify-center p-5 ml-0 md:ml-32 gap-20">
                 <div id="photoContainer" className='grid grid-cols-2 gap-4'>
                     <img src={Main} alt="Woman throwing a bed sheet" className='col-span-2'></img>
                     <img src={Left} alt="Woman cleaning window while wearing a mask"></img>
                     <img src={Left} alt="A person vacuuming up a large amount of confetti"></img>
                 </div>
-                <div id="aboutInfo-container" className='w-4/5'>
+                <div id="aboutInfo-container" className='md:w-4/5'>
                     <h1 className='text-4xl font-Monarda font-bold mb-16'>Who We Are</h1>
-                    <h2 className='text-2xl font-Afterglow w-3/4'>Maribel's Cleaning Services is a locally owned and operated cleaning service for the greater Omaha area. We pride ourselves on 
+                    <h2 className='text-2xl font-Afterglow w-4/5'>Maribel's Cleaning Services is a locally owned and operated cleaning service for the greater Omaha area. We pride ourselves on 
                         providing quality work, excellent customer service and attentiveness to details. Our focus is to really listen to our clients, 
                         understand their needs and provide exceptional service that will leave you feeling confident that a job will be well done. 
                     </h2>
