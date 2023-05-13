@@ -13,9 +13,9 @@ const Home = () => {
     const reviews = [
         {
         name: "Bravo Italian Kitchen", 
-        review: "Lorem Ipsum ;aksdfak;sdf;aksdf;askdflf", 
+        review: "Maribels Cleaning Service is absolutely top notch. They're very trustworthy and always do a great job. They're always on time and exceed expectations. I highly recommend them to anyone with cleaning needs. ", 
         manager: 'Ben Reed', 
-        title: "Manager"
+        title: "General Manager"
     }, {
         name: 'Mouth of the South', 
         review: 'Is really good', 
@@ -86,9 +86,9 @@ const Home = () => {
                         hover:transform hover:translate-y-[-5px]" alt="Latino Center"></img>
                     </div>
                 </div>
-                <div>
+                <div className='md:w-1/2'>
                     <h1 className='pt-10 md:pt-0 text-3xl mb-10 font-Monarda'>What They're Saying</h1>
-                    <div id="review" className='bg-white px-8 py-12'>
+                    <div id="review" className='bg-white px-8 py-12 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'>
                         {review.review}
                     </div>
                     <div className='ml-5 mt-5'>
