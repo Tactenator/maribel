@@ -39,10 +39,9 @@ const Contact = () => {
                     </div>
                         <textarea name='message' rows="8" cols="30" placeholder='How can we help?' 
                         className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none text-sm min-w-[250px] md:w-1/2  text-gray-900'></textarea>
-                    <button type="submit" className='border-solid border-2 border-white text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                        hover:bg-white hover:text-sky-500'>Send Message</button>
                 </form>
-                
+                <button type="submit" className='border-solid border-2 border-white text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                        hover:bg-white hover:text-sky-500'>Send Message</button>
             </div>
             <img className="hidden md:flex rounded-full w-[500px] h-[500px]" src={Maid} alt="Happy maid smiling"></img>
             
