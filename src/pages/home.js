@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom'
 
-import LandingPage from '../images/home.jpg';
 import newLanding from '../images/newLandingPage.jpg'
 import Cleaning from '../images/cleaning.jpg';
 import Bravo from '../images/bravologo.png'
