@@ -53,6 +53,7 @@ const Services = () => {
         <div id="servicesBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl text-center">
                 <h1>Our Services</h1>
             </div>
+            <div className='text-center font-Afterglow text-2xl pt-10'>Click on a service below to learn more!</div>
             <div id="servicesContainer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 content-center justify-center place-items-center p-10">
                 <div id="service" data-value="0" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Commercial} alt="Test  for design purposes"></img>
