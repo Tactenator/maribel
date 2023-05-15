@@ -9,6 +9,7 @@ import Office from '../images/office.jpg'
 import Restaurant from '../images/restaurant.jpg'
 import Contact from '../components/contact';
 import { Player } from '@lottiefiles/react-lottie-player';
+import { Link } from 'react-router-dom';
 
 
 
@@ -126,9 +127,9 @@ const Services = () => {
                         ))}
                         <h1 className='my-4 text-center text-2xl'>Want to learn more? We'd love to hear from you!</h1>
                         <div className='flex justify-center my-10'>
-                            <button className='border-solid border-2 border-white border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                                            hover:bg-white hover:text-sky-500
-                            '>Contact Us</button>
+                            <Link to="/contact" className='border-solid border-2 border-white border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                            hover:bg-white hover:text-sky-500
+                            '>Contact Us</Link>
                         </div>
                     </div>
                 </div>
