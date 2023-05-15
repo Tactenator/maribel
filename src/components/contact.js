@@ -4,7 +4,8 @@ const Contact = () => {
     return ( 
         <div id="contact-container" className="flex flex-col md:flex-row justify-center py-20 px-20 bg-sky-400">
             <div id="form-container" className="w-full">
-                <form name="contact" method="POST" className="flex flex-col gap-6 items-center" data-netlify="true">
+                <form name="Contact" method="POST" className="flex flex-col gap-6 items-center" data-netlify="true">
+                    <input type="hidden" name="form-name" value="Contact" />
                     <div id='requestInfo-container' className='bg-sky-400 text-center text-white font-Afterglow w-full'>
                         <h1 className='text-4xl '>Ready to get Started? Send us a message!</h1>   
                     </div>
