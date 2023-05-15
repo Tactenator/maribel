@@ -12,7 +12,7 @@ const About = () => {
             <div id="aboutusBanner" className="py-16  bg-sky-400/50 text-white text-center font-Monarda text-4xl">
                 <h1>About Us</h1>
             </div>
-            <div id="aboutUsContainer" className="flex flex-col md:flex-row justify-center p-5 ml-0 md:ml-32 gap-20">
+            <div id="aboutUsContainer" className="flex flex-col md:flex-row justify-center p-20 ml-0 md:ml-20 gap-20">
                 <div id="photoContainer" className='grid grid-cols-2 gap-4'>
                     <img src={Main} alt="Woman throwing a bed sheet" className='col-span-2'></img>
                     <img src={Left} alt="Woman cleaning window while wearing a mask"></img>
