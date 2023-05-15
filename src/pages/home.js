@@ -20,7 +20,7 @@ const Home = () => {
         name: 'Mouth of the South', 
         review: 'Is really good', 
         manager: 'Sam',
-        title: 'Manager and Fag'
+        title: 'Manager'
     }, 
     {
         name: 'Something latino center', 
