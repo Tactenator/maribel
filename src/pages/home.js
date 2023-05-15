@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 import LandingPage from '../images/home.jpg';
 import newLanding from '../images/newLandingPage.jpg'
@@ -44,12 +45,11 @@ const Home = () => {
                     <h1 className='text-6xl text-sky-500 font-Monarda text-center'>Maribel's Cleaning Service</h1>
                     <h2 className='text-4xl font-Afterglow text-center'>Your satisfaction is our priority!</h2>
                     <div className='flex flex-col md:flex-row gap-20 pt-5 md:pt-20'>
-                        <button className='border-solid border-2 border-sky-400 bg-sky-500 py-3 px-2 text-2xl rounded-lg transition-all duration-200
-                                        hover:bg-white hover:text-sky-500
-                        '>Our Services</button>
-                        <button className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                                        hover:bg-white hover:text-sky-500
-                        '>Request a Free Estimate</button>
+                        <Link to="/services" className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                                        hover:bg-white hover:text-sky-500'>Our Services
+                        </Link>
+                        <Link to="/contact" className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                                        hover:bg-white hover:text-sky-500'>Request a Free Estimate</Link>
                     </div>
                     
                 </div>
@@ -65,9 +65,9 @@ const Home = () => {
                             with the best service possible!
                         </h3>
                         <h3 className='text-3xl my-5 text-center'>Click Below to Check out Our Services!</h3>
-                        <button className='border-solid border-2 border-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                                           hover:bg-white hover:text-sky-500
-                        '>Our Services</button>
+                        <Link to="/services" className='border-solid border-2 border-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                            hover:bg-white hover:text-sky-500'>Our Services
+                        </Link>
                     </div>
                         <div className='md:w-3/4 mx-auto'>
                             <img src={Cleaning} className="rounded-xl" alt='Gloved handle holding a bottle of cleanser'></img>
