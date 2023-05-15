@@ -4,10 +4,10 @@ const Contact = () => {
     return ( 
         <div id="contact-container" className="flex flex-col md:flex-row justify-center py-20 px-20 bg-sky-400">
             <div id="form-container" className="w-full">
-            <div className="flex flex-col gap-6 items-center">
-                <div id='requestInfo-container' className='bg-sky-400 text-center text-white font-Afterglow w-full'>
-                    <h1 className='text-4xl '>Ready to get Started? Send us a message!</h1>   
-                </div>
+                <form name="contact" method="POST" className="flex flex-col gap-6 items-center" netlify>
+                    <div id='requestInfo-container' className='bg-sky-400 text-center text-white font-Afterglow w-full'>
+                        <h1 className='text-4xl '>Ready to get Started? Send us a message!</h1>   
+                    </div>
                     <img className="block md:hidden rounded-full w-[200px] h-[200px]" src={Maid} alt="Happy maid smiling"></img>
                     <div className="relative h-12 w-1/2 min-w-[250px]">
                         <input
@@ -38,9 +38,9 @@ const Contact = () => {
                     </div>
                         <textarea rows="8" cols="30" placeholder='How can we help?' 
                         className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none text-sm min-w-[250px] md:w-1/2  text-gray-900'></textarea>
-                       <button className='border-solid border-2 border-white text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                        hover:bg-white hover:text-sky-500'>Contact Us</button>
-                </div>
+                    <button type="submit" className='border-solid border-2 border-white text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
+                        hover:bg-white hover:text-sky-500'>Send Message</button>
+                </form>
                 
             </div>
             <img className="hidden md:flex rounded-full w-[500px] h-[500px]" src={Maid} alt="Happy maid smiling"></img>
