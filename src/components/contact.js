@@ -6,10 +6,10 @@ const Contact = () => {
             <div id="form-container" className="w-full">
                 <form name="Contact" method="POST" className="flex flex-col gap-6 items-center" data-netlify="true" netlify>
                     <input type="hidden" name="form-name" value="Contact" />
-                    {/* <div id='requestInfo-container' className='bg-sky-400 text-center text-white font-Afterglow w-full'>
+                    <div id='requestInfo-container' className='bg-sky-400 text-center text-white font-Afterglow w-full'>
                         <h1 className='text-4xl '>Ready to get Started? Send us a message!</h1>   
                     </div>
-                    <img className="block md:hidden rounded-full w-[200px] h-[200px]" src={Maid} alt="Happy maid smiling"></img> */}
+                    <img className="block md:hidden rounded-full w-[200px] h-[200px]" src={Maid} alt="Happy maid smiling"></img>
                     <div className="relative h-12 w-1/2 min-w-[250px]">
                         <input type="text" name="name"
                         className="peer h-full w-full rounded-[7px] border border-white bg-white border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:black focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
@@ -20,7 +20,7 @@ const Contact = () => {
                         </label>
                     </div>
                     <div className="relative h-12 w-1/2 min-w-[250px]">
-                        <input type='text' name='email'
+                        <input type='email' name='email'
                         className="peer h-full w-full rounded-[7px] border border-white bg-white border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-black outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-t-blue-gray-200 "
                         placeholder=" "
                         />
