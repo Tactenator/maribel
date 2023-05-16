@@ -16,7 +16,7 @@ const Contact = () => {
             body: new URLSearchParams(formData).toString(),
         })
         .then(() => console.log('success'))
-        .then(() => window.location = '/thank-you/')
+        // .then(() => window.location = '/thank-you/')
         .catch((error) => alert(error));
     }
 
