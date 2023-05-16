@@ -57,7 +57,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <h1 className="text-center text-4xl font-Monarda my-20">Contact Us Today!</h1>
-                <div id='contactContainer' className='flex flex-col md:flex-row justify-center items-center gap-10 w-screen my-10' data-netlify="true" onSubmit={((e) => { handleSubmit(e)})}>
+                <div id='contactContainer' className='flex flex-col md:flex-row justify-center items-center gap-10 w-screen my-10'>
                     <form ref={formRef} className="flex flex-col gap-6 px-6" data-netlify="true" onSubmit={((e) => { handleSubmit(e)})}>
                         <div className="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
                             <input type="text" name="name" required
