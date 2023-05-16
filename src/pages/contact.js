@@ -10,9 +10,9 @@ const Contact = () => {
 
     function handleSubmit (e) {
         e.preventDefault()
-        console.log('clicked!')
 
         let formData = new FormData(formRef.current);
+        console.log(formData)
 
         fetch("../../public/contact-form.html", {
             method: "POST",
