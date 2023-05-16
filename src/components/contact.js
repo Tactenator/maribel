@@ -4,6 +4,7 @@ import Maid from '../images/maid.jpg'
 const Contact = () => {
 
     const formRef = useRef()
+    const thanksRef = useRef()
 
     function handleSubmit (e) {
         e.preventDefault()
@@ -16,12 +17,15 @@ const Contact = () => {
             body: new URLSearchParams(formData).toString(),
         })
         .then(() => console.log('success'))
-        // .then(() => window.location = '/thank-you/')
+        .then(() => {
+            formRef.current.style.display = 'none';
+            thanksRef.current.style.display = 'flex';
+        })
         .catch((error) => alert(error));
     }
 
     return ( 
-        <div id="contact-container" className="flex flex-col md:flex-row justify-center py-20 px-20 bg-sky-400">
+        <div id="contact-container" className="relative flex flex-col md:flex-row justify-center py-20 px-20 bg-sky-400">
             <div id="form-container" className="w-full">
                 <form ref={formRef} name="Contact" method="POST" className="flex flex-col gap-6 items-center" data-netlify="true" onSubmit={((e) => { handleSubmit(e)})}>
                     <input type="hidden" name="form-name" value="Contact" />
@@ -61,9 +65,14 @@ const Contact = () => {
                          <button type="submit" className='border-solid border-2 border-white text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
                         hover:bg-white hover:text-sky-500'>Send Message</button>
                 </form>
+                <div ref={thanksRef} className='text-white font-Afterglow text-center h-full flex flex-col justify-center gap-6' style={{display: 'none'}}>
+                    <h1 className='text-white font-Monarda text-4xl'>Thank you!</h1>
+                    <p className='text-3xl'>We have recieved your message! Thank you for your interest in Maribel's Cleaning Service!</p>
+                    <p className='text-3xl'>We will reply to your message as soon as we can. </p>
+                    <p className='text-3xl'>Thank you!</p>
+                </div>
             </div>
             <img className="hidden md:flex rounded-full w-[500px] h-[500px]" src={Maid} alt="Happy maid smiling"></img>
-            
         </div>
         
      );
