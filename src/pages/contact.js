@@ -3,6 +3,7 @@ import Hours from '../images/hours.svg'
 import Telephone from '../images/telephone.svg';
 import Mail from '../images/mail.svg';
 
+
 const Contact = () => {
 
     const formRef = useRef()
