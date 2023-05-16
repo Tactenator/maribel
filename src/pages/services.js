@@ -7,7 +7,7 @@ import Pressure from '../images/pressure.jpg';
 import After from '../images/afterhours.jpg'
 import Office from '../images/office.jpg'
 import Restaurant from '../images/restaurant.jpg'
-import Contact from '../components/contact';
+import ContactDiv from '../components/contact';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Link } from 'react-router-dom';
 
@@ -136,7 +136,7 @@ const Services = () => {
                 }
             </div>
             <Blurb />
-            <Contact />
+            <ContactDiv />
         </>
             
      );

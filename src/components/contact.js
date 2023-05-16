@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import Maid from '../images/maid.jpg'
 
-const Contact = () => {
+const ContactDiv = () => {
 
     const formRef = useRef()
     const thanksRef = useRef()
@@ -78,4 +78,4 @@ const Contact = () => {
      );
 }
  
-export default Contact;
+export default ContactDiv;

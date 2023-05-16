@@ -6,7 +6,7 @@ import Cleaning from '../images/cleaning.jpg';
 import Bravo from '../images/bravologo.png'
 import Mots from '../images/motslogo.png';
 import Mlcdc from '../images/mlcdclogog.png';
-import Contact from '../components/contact';
+import ContactDiv from '../components/contact';
 
 
 const Home = () => {
@@ -96,7 +96,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <Contact />
+            <ContactDiv />
         </>
      );
 }

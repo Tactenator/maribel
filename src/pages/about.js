@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Blurb from '../components/blurb';
-import Contact from '../components/contact';
+import ContactDiv from '../components/contact';
 import Main from '../images/about1.jpg';
 import Left from '../images/about2.jpg';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
@@ -39,7 +39,7 @@ const About = () => {
                 </div>
             </div>
             <Blurb />
-            <Contact />
+            <ContactDiv />
         </>
      );
 }
