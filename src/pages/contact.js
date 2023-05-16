@@ -34,10 +34,10 @@ const Contact = () => {
                     </div>
                 </div>
                 <h1 className="text-center text-4xl font-Monarda my-20">Contact Us Today!</h1>
-                <div id='contactContainer' className='flex flex-col md:flex-row justify-center items-center gap-10 w-screen my-10'>
+                <form id='contactContainer' className='flex flex-col md:flex-row justify-center items-center gap-10 w-screen my-10' data-netlify="true">
                     <div class="flex flex-col gap-6 px-6">
                         <div class="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
-                            <input
+                            <input type="text" name="name"
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-gray-50 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-sky-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" "
                             />
@@ -46,7 +46,7 @@ const Contact = () => {
                             </label>
                         </div>
                         <div class="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
-                            <input
+                            <input type='email' name='email'
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-gray-50 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-sky-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" "
                             />
@@ -55,7 +55,7 @@ const Contact = () => {
                             </label>
                         </div>
                         <div class="relative h-12 w-full min-w-[300px] md:min-w-[400px]">
-                            <input
+                            <input type='text' name='phone'
                             className="peer h-full w-full rounded-[7px] border border-blue-gray-200 bg-gray-50 border-t-transparent bg-transparent px-3 py-2.5 font-sans text-sm font-normal text-blue-gray-700 outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-sky-500 focus:border-t-transparent focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50"
                             placeholder=" "
                             />
@@ -65,13 +65,13 @@ const Contact = () => {
                         </div>
                     </div>
                     <div>
-                    <textarea rows="8" cols="30" placeholder='How can we help?' 
+                    <textarea name='message' rows="8" cols="30" placeholder='How can we help?' 
                     className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none min-w-[300px] md:min-w-[500px] text-sm text-gray-900'></textarea>
                     </div>
-                </div>
+                </form>
                 <div className="flex justify-center mb-10">
                     <button className='border-solid border-2 border-sky-400 bg-sky-500 text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200 hover:bg-white hover:text-sky-500
-                    '>Contact Us</button>
+                    '>Send Message</button>
                 </div>
             </div>
         </> 
