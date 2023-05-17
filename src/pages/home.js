@@ -5,7 +5,7 @@ import newLanding from '../images/newLandingPage.jpg'
 import Cleaning from '../images/cleaning.jpg';
 import Bravo from '../images/bravologo.png'
 import Mots from '../images/motslogo.png';
-import Mlcdc from '../images/mlcdclogog.png';
+import LaFuente from '../images/LaFuente.png';
 import ContactDiv from '../components/contact';
 
 
@@ -20,13 +20,13 @@ const Home = () => {
         name: 'Mouth of the South', 
         review: 'Is really good', 
         manager: 'Sam',
-        title: 'Manager'
+        title: 'General Manager'
     }, 
     {
-        name: 'Something latino center', 
-        review: 'da best', 
-        manager: 'Some guy',
-        title: 'Manager'
+        name: 'La Fuente Business Center', 
+        review: 'We are very happy with Maribels Cleaning Service. They are incredibly responsible and reliable.', 
+        manager: 'Juan J. Montoya',
+        title: 'Executive Director'
     }]
 
     const [review, setReview] = useState(reviews[0]);
@@ -79,9 +79,9 @@ const Home = () => {
                     <div id='brands-container' className='grid grid-cols-2 gap-5'>
                         <img src={Bravo} data-value="0" onClick={((e) => handleReview(e))} className="w-4/5 hover:cursor-pointer transition-all duration-200
                         hover:transform hover:translate-y-[-5px]" alt='Bravo Italian Kitchen'></img>
-                        <img src={Mots} data-value="1" onClick={((e) => handleReview(e))} className="w-4/5 hover:cursor-pointer transition-all duration-200
+                        <img src={Mots} data-value="1" onClick={((e) => handleReview(e))} className="bg-sky-500 w-4/5 hover:cursor-pointer transition-all duration-200
                         hover:transform hover:translate-y-[-5px]" alt="Mouth of the South Logo"></img>   
-                        <img src={Mlcdc} data-value="2" onClick={((e) => handleReview(e))} className="w-4/5 hover:cursor-pointer transition-all duration-200
+                        <img src={LaFuente} data-value="2" onClick={((e) => handleReview(e))} className="w-4/5 hover:cursor-pointer transition-all duration-200
                         hover:transform hover:translate-y-[-5px]" alt="Latino Center"></img>
                     </div>
                 </div>
