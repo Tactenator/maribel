@@ -41,7 +41,6 @@ const Home = () => {
         <>
             <div id="home-container" className='flex flex-col items-center md:pt-24 h-[100vh] relative'>
                 <img src={newLanding} alt="Comfy, clean house with blue sofa" className='absolute top-0 left-0 h-[100vh] w-[100vw] object-cover brightness-50'></img>
-                {/* <img className="w-full" src={LandingPage} alt="Comfy, clean house with blue sofa"></img> */}
                 <div id='landingPage-text' className='flex flex-col items-center text-white mx-auto p-10 gap-16 font-Afterglow w-full z-10'>
                     <h1 className='text-6xl text-sky-500 font-Monarda text-center'>Maribel's Cleaning Service</h1>
                     <h2 className='text-4xl font-Afterglow text-center'>Your satisfaction is our priority!</h2>
