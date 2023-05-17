@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
-import { useRef } from 'react';
+import { useContext, useRef } from 'react';
+import { Context } from "../Context";
 
 const Navbar = () => {
     const mobileRef = useRef()
+    const { language, setLanguage } = useContext(Context)
 
     function handleMobile(e) {
         e.preventDefault()
@@ -18,6 +20,7 @@ const Navbar = () => {
     function closeModal() {
         mobileRef.current.style.display = "none"; 
     }
+
     return ( 
         <>
             <nav className="flex justify-around items-center pt-6 pb-6 bg-sky-500 text-white md:pl-24 md:pr-24 md:gap-10">
@@ -29,6 +32,7 @@ const Navbar = () => {
                     <Link className="text-2xl font-Afterglow transition-all duration-200 hover:underline" to="/about">About</Link>
                     <Link className="text-2xl font-Afterglow transition-all duration-200 hover:underline" to="/services">Services</Link>
                     <Link className="text-2xl font-Afterglow transition-all duration-200 hover:underline" to="/contact">Contact</Link>
+                    
                 </ul>
                 <div  id="hamburger-menu" className="md:hidden" onClick={handleMobile}>
                     <div className='mx-auto bg-white mb-1 h-[3px] w-[25px] pointer-events-none'></div>

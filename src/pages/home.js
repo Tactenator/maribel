@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom'
+import { Context } from '../Context';
 
 import newLanding from '../images/newLandingPage.jpg'
 import Cleaning from '../images/cleaning.jpg';
@@ -9,7 +10,7 @@ import LaFuente from '../images/LaFuente.png';
 import ContactDiv from '../components/contact';
 
 
-const Home = () => {
+const Home = () => { 
     const reviews = [
         {
         name: "Bravo Italian Kitchen", 
@@ -19,7 +20,7 @@ const Home = () => {
     }, {
         name: 'Mouth of the South', 
         review: 'Is really good', 
-        manager: 'Sam',
+        manager: 'Samuel Voss',
         title: 'General Manager'
     }, 
     {
@@ -30,6 +31,7 @@ const Home = () => {
     }]
 
     const [review, setReview] = useState(reviews[0]);
+    const { language, setLanguage } = useContext(Context);
     
     function handleReview(e) {
         setReview(reviews[e.target.dataset.value])
