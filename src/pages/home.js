@@ -14,18 +14,21 @@ const Home = () => {
     const reviews = [
         {
         name: "Bravo Italian Kitchen", 
-        review: "Maribels Cleaning Service is absolutely top notch. They're very trustworthy and always do a great job. They're always on time and exceed expectations. I highly recommend them to anyone with cleaning needs. ", 
+        english: "Maribels Cleaning Service is absolutely top notch. They're very trustworthy and always do a great job. They're always on time and exceed expectations. I highly recommend them to anyone with cleaning needs. ", 
+        spanish: "El servicio de limpieza de Maribels es absolutamente de primera categoría. Son muy confiables y siempre hacen un gran trabajo. Siempre llegan a tiempo y superan las expectativas. Los recomiendo encarecidamente a cualquier persona con necesidades de limpieza.",
         manager: 'Ben Reed', 
         title: "General Manager"
     }, {
         name: 'Mouth of the South', 
-        review: 'Is really good', 
+        english: 'Is really good', 
+        spanish: "es muy bien",
         manager: 'Samuel Voss',
         title: 'General Manager'
     }, 
     {
         name: 'La Fuente Business Center', 
-        review: 'We are very happy with Maribels Cleaning Service. They are incredibly responsible and reliable.', 
+        english: 'We are very happy with Maribels Cleaning Service. They are incredibly responsible and reliable.', 
+        spanish: "Estamos muy contentos con el Servicio de Limpieza de Maribels. Son increíblemente responsables y confiables.",
         manager: 'Juan J. Montoya',
         title: 'Executive Director'
     }]
@@ -104,7 +107,7 @@ const Home = () => {
                         {language === "English" ? "What They're Saying" : "Lo que Están Diciendo"}
                     </h1>
                     <div id="review" className='bg-white px-8 py-12 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]'>
-                        {review.review}
+                        {language === "English" ? review.english : review.spanish}
                     </div>
                     <div className='ml-5 mt-5'>
                         <h3>{review.manager} - {review.title}</h3>
