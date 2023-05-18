@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect, useRef, useContext } from 'react'
 
 import Blurb from '../components/blurb';
 import Commercial from '../images/commercial.jpg'
@@ -10,6 +10,7 @@ import Restaurant from '../images/restaurant.jpg'
 import ContactDiv from '../components/contact';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { Link } from 'react-router-dom';
+import { Context } from '../Context';
 
 
 
@@ -18,6 +19,7 @@ const Services = () => {
     const [data, setData] = useState();
     const [count, setCount] = useState('0');
     const modalRef = useRef();
+    const { language, setLanguage } = useContext(Context);
 
     useEffect(() => {
         fetchData()
@@ -52,56 +54,58 @@ const Services = () => {
     return ( 
         <>
         <div id="servicesBanner" className="p-16 bg-sky-400/50 text-white font-Monarda text-4xl text-center">
-                <h1>Our Services</h1>
+                <h1>{ language === "English" ? "Our Services" : "Nuestros Servicios" }</h1>
             </div>
-            <div className='text-center font-Afterglow text-2xl pt-10'>Click on a service below to learn more!</div>
+            <div className='text-center font-Afterglow text-2xl pt-10'>{ language === "English" ? "Click on a service below to learn more!" : "¡Haga clic en un servicio a continuación para obtener más información!" }</div>
             <div id="servicesContainer" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 content-center justify-center place-items-center p-10">
                 <div id="service" data-value="0" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Commercial} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Commercial Cleaning</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "Commercial Cleaning" : "Limpieza Comercial" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
-                        <p className='pointer-events-none'>Scrubbing, vacuuming, you name it. We're here for all your basic cleaning needs.  </p>
+                        <p className='pointer-events-none'>{ language === "English" ? "Scrubbing, vacuuming, you name it. We're here for all your basic cleaning needs." 
+                            : "Fregar, aspirar, lo que sea. Estamos aquí para todas sus necesidades básicas de limpieza." }  
+                        </p>
                     </div>
                 </div>
                 <div id="service" data-value="1" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Movein} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Move In/Out Service</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "Move In/Out Service" : "Servicios de Mudanza" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
-                        <p>We'll make sure we leave the place you're leaving better than when you moved in. </p>
+                        <p>{ language === "English" ? "We'll make sure we leave the place you're leaving better than when you moved in." : "Nos aseguraremos de dejar el lugar que te vas mejor que cuando te mudaste." } </p>
                     </div>
                 </div>
                 <div id="service" data-value="2" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Pressure} alt="Test  for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Pressure Cleaning</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "Pressure Cleaning" : "Limpieza a presión" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
-                        <p>Need something a little more heavy duty? We got you covered.  </p>
+                        <p>{ language === "English" ? "Need something a little more heavy duty? We got you covered." : "¿Necesita algo un poco más resistente? Te tenemos cubierto." }  </p>
                     </div>
                 </div>
                 <div id="service" data-value="3" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={After} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>After Hours Cleaning</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "After Hours Cleaning" : "Limpieza fuera de horas" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
-                        <p>Closing up shop? We'll take care of all your end of the day cleaning needs.  </p>
+                        <p>{ language === "English" ? "Closing up shop? We'll take care of all your end of the day cleaning needs." : "¿Cerrar tienda? Nos ocuparemos de todas sus necesidades de limpieza al final del día." }</p>
                     </div>
                 </div>
                 <div id="service" data-value="4" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Office} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Office Cleaning</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "Office Cleaning" : "Limpieza de oficinas" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px ] pointer-events-none'></div>
-                        <p>We keep offices nice and tidy so you can focus more on getting the job done. </p>
+                        <p>{ language === "English" ? "We keep offices nice and tidy so you can focus more on getting the job done." : "Mantenemos las oficinas limpias y ordenadas para que pueda concentrarse más en hacer el trabajo." }</p>
                     </div>
                 </div>
                 <div id="service" data-value="5" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={Restaurant} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>Restaurant Services</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "Restaurant Services" : "Servicios de restaurante" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
-                        <p>A clean restaurant is a happy one. We'll take care of all your cleaning needs. </p>
+                        <p>{ language === "English" ? "A clean restaurant is a happy one. We'll take care of all your cleaning needs." : "Un restaurante limpio es feliz. Nos encargaremos de todas sus necesidades de limpieza." }</p>
                     </div>
                 </div>
             </div>
@@ -125,11 +129,11 @@ const Services = () => {
                                 { item }
                             </div>
                         ))}
-                        <h1 className='my-4 text-center text-2xl'>Want to learn more? We'd love to hear from you!</h1>
+                        <h1 className='my-4 text-center text-2xl'>{ language === "English" ? "Want to learn more? We'd love to hear from you!" : "¿Querer aprender más? ¡Nos encantaría saber de usted!" }</h1>
                         <div className='flex justify-center my-10'>
                             <Link to="/contact" className='border-solid border-2 border-white border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
                             hover:bg-white hover:text-sky-500
-                            '>Contact Us</Link>
+                            '>{ language === "English" ? "Contact Us" : "Contacta con nosotros" }</Link>
                         </div>
                     </div>
                 </div>
