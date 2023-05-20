@@ -43,7 +43,7 @@ const ContactDiv = () => {
                         placeholder=" " required
                         />
                         <label className="pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-black transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5   before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block  after:flex-grow after:rounded-tr-md  peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-black peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-disabled:text-transparent  peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-                        { language === "english" ? "Name" : "Nombre" }
+                        { language === "English" ? "Name" : "Nombre" }
                         </label>
                     </div>
                     <div className="relative h-12 w-1/2 min-w-[250px]">
@@ -52,7 +52,7 @@ const ContactDiv = () => {
                         placeholder=" " required
                         />
                         <label className="pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-black transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5   before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block  after:flex-grow after:rounded-tr-md  peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-black peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-disabled:text-transparent  peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-                        { language === "english" ? "Email" : "Correo Electronico" }
+                        { language === "English" ? "Email" : "Correo Electronico" }
                         </label>
                     </div>
                     <div className="relative h-12 w-1/2 min-w-[250px]">
@@ -61,13 +61,13 @@ const ContactDiv = () => {
                         placeholder=" " required
                         />
                         <label className="pointer-events-none absolute left-0 -top-1.5 flex h-full w-full select-none text-[11px] font-normal leading-tight text-black transition-all before:pointer-events-none before:mt-[6.5px] before:mr-1 before:box-border before:block before:h-1.5 before:w-2.5   before:transition-all after:pointer-events-none after:mt-[6.5px] after:ml-1 after:box-border after:block  after:flex-grow after:rounded-tr-md  peer-placeholder-shown:text-sm peer-placeholder-shown:leading-[3.75] peer-placeholder-shown:text-black peer-placeholder-shown:before:border-transparent peer-placeholder-shown:after:border-transparent peer-focus:text-[11px] peer-focus:leading-tight peer-disabled:text-transparent  peer-disabled:peer-placeholder-shown:text-blue-gray-500">
-                        { language === "english" ? "Phone" : "Teléfono" }
+                        { language === "English" ? "Phone" : "Teléfono" }
                         </label>
                     </div>
                         <textarea name='message' rows="8" cols="30" placeholder='How can we help?' required
                         className='bg-gray-50 rounded-lg p-2.5 border border-gray-300 resize-none text-sm min-w-[250px] md:w-1/2  text-gray-900'></textarea>
                          <button type="submit" className='border-solid border-2 border-white text-white py-6 px-10 text-2xl rounded-lg transition-all duration-200
-                        hover:bg-white hover:text-sky-500'>{language === "english" ? "Send Message" : "Enviar mensaje"}</button>
+                        hover:bg-white hover:text-sky-500'>{language === "English" ? "Send Message" : "Enviar mensaje"}</button>
                 </form>
                 <div ref={thanksRef} className='text-white font-Afterglow text-center h-full flex flex-col justify-center gap-6 pb-20' style={{display: 'none'}}>
                     <h1 className='text-white font-Monarda text-4xl'>{language === "English" ? "Thank you!" : "¡Gracias!"}</h1>
