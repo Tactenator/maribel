@@ -50,10 +50,10 @@ const Home = () => {
                         {language === "English" ? "Your satisfaction is our priority!" : "¡Su satisfacción es nuestro prioridad!"}
                     </h2>
                     <div className='flex flex-col md:flex-row gap-20 pt-5 md:pt-20'>
-                        <Link to="/services" className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200 hover:bg-white hover:text-sky-500'>
+                        <Link to="/services" className='border-solid border-2 border-sky-400 bg-sky-500 text-center py-6 px-10 text-2xl rounded-lg transition-all duration-200 hover:bg-white hover:text-sky-500'>
                             {language === "English" ? "Our Services" : "Nuestros Servicios"}
                         </Link>
-                        <Link to="/contact" className='border-solid border-2 border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200 hover:bg-white hover:text-sky-500'>
+                        <Link to="/contact" className='border-solid border-2 border-sky-400 bg-sky-500 text-center py-6 px-10 text-2xl rounded-lg transition-all duration-200 hover:bg-white hover:text-sky-500'>
                             {language === "English" ? "Request a Free Estimate" : "Solicite un presupuesto gratuito" }
                         </Link>
                     </div>
