@@ -36,7 +36,7 @@ const Footer = () => {
                         {language === "English" ? "Contact Information" : "Información del Contacto"}
                     </h2>
                     <ul>
-                        <li className='mb-5'>{language === "English" ? "Phone" : "Teléfono"}: <a href="tel:4022037491" className="font-Afterglow hover:underline">402-203-7491</a></li>
+                        <li className='mb-5'>{language === "English" ? "Phone" : "Teléfono"}: <a href="tel:4022037491" className="font-Afterglow hover:underline">402-905-2642</a></li>
                         <li>{language === "English" ? "Email" : "Correo Electronico"}: <a href='mailto: cleaning1now@gmail.com' className='font-Afterglow hover:underline'>cleaning1now@gmail.com</a></li>
                     </ul>
                 </div>

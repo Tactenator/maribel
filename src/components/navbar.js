@@ -30,7 +30,7 @@ const Navbar = () => {
             <nav className="flex justify-around items-center pt-6 pb-6 bg-sky-500 text-white md:pl-24 md:pr-24 md:gap-10">
                 <Link to="/" className="sm:block text-2xl md:text-3xl font-Monarda">Maribel's Cleaning Service</Link>
                 <h3 className="hidden lg:block text-2xl font-Afterglow">Omaha, NE</h3>
-                <a href="tel:4022037491" className="hidden lg:block text-2xl font-Afterglow hover:underline">402-203-7491</a>
+                <a href="tel:4022037491" className="hidden lg:block text-2xl font-Afterglow hover:underline">402-905-2642</a>
                 <ul className="hidden md:flex gap-7">
                     <Link className="text-2xl font-Afterglow transition-all duration-200 hover:underline" to="/">
                         {language === "English" ? "Home" : "Inicio" }
