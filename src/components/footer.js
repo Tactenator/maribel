@@ -5,7 +5,7 @@ import { Context } from '../Context';
 const Footer = () => {
     const { language, setLanguage } = useContext(Context)
     return ( 
-        <footer className="flex flex-col md:flex-row justify-evenly bg-sky-500 pt-10 pb-32 px-20 text-white font-Afterglow text-2xl">
+        <footer className="relative flex flex-col md:flex-row justify-evenly bg-sky-500 pt-10 pb-32 px-20 text-white font-Afterglow text-2xl">
             <div>
                 <h1 className='mb-5 font-bold font-Monarda text-3xl'>Maribel's Cleaning Service</h1>
                 <ul className="flex flex-col gap-2 ml-5">
@@ -48,6 +48,8 @@ const Footer = () => {
                         <li className='text-sm'>{language === "English" ? "*No Apple Pay or Venmo at this time" : "*No Apple Pay o Venmo en este momento"}</li>
                     </ul>
                 </div>
+            </div>
+            <div className='absolute bottom-0 mb-5 text-white text-lg text-center left-0 right-0'>Powered by <a className="underline" href="https://www.paleblackdotllc.com">Pale Black Dot LLC</a>. All Rights Reserved &copy;2023
             </div>
         </footer>
      );

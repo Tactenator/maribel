@@ -87,7 +87,7 @@ const Services = () => {
                 <div id="service" data-value="3" onClick={((e) => handleModal(e))} className="w-4/5 h-auto mb-20 bg-stone-100 hover:cursor-pointer">
                     <img className="pointer-events-none" src={After} alt="Test for design purposes"></img>
                     <div className='px-5 pb-5 pointer-events-none'>
-                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "After Hours Cleaning" : "Limpieza fuera de horas" }</h1>
+                        <h1 className='text-center text-2xl font-bold my-5 pointer-events-none'>{ language === "English" ? "After Hours Cleaning" : "Limpieza depues de Negocio" }</h1>
                         <div className='mx-auto bg-sky-500 mb-5 h-[3px] w-[50px] pointer-events-none'></div>
                         <p>{ language === "English" ? "Closing up shop? We'll take care of all your end of the day cleaning needs." : "¿Cerrar tienda? Nos ocuparemos de todas sus necesidades de limpieza al final del día." }</p>
                     </div>
