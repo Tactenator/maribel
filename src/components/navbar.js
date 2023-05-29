@@ -69,6 +69,9 @@ const Navbar = () => {
                         <Link className="text-4xl font-Afterglow transition-all duration-200 hover:underline" onClick={closeModal} to="/contact">
                             {language === "English" ? "Contact" : "Contacto"}
                         </Link>
+                        <button className="border solid rounded-lg py-5 px-10 text-2xl font-bold my-10 hover:bg-white hover:text-sky-500 transition-all duration-200" onClick={handleLanguage}>
+                            {language === "English" ? "Español" : "English"}
+                        </button>
                     </ul>
                 </div>
             </nav>

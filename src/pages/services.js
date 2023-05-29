@@ -123,12 +123,7 @@ const Services = () => {
                     />
                     <div id="modal-information" className="px-4 py-2 bg-sky-400 text-[18px] text-white">
                         <h1 className='text-center text-3xl my-10'>What We Offer</h1>
-                        <h4>{data[count].information}</h4>
-                        { data[count].points.map(item => ( 
-                            <div>
-                                { item }
-                            </div>
-                        ))}
+                        <h4>{ language === "English" ? data[count].english : data[count].spanish }</h4>
                         <h1 className='my-4 text-center text-2xl'>{ language === "English" ? "Want to learn more? We'd love to hear from you!" : "¿Querer aprender más? ¡Nos encantaría saber de usted!" }</h1>
                         <div className='flex justify-center my-10'>
                             <Link to="/contact" className='border-solid border-2 border-white border-sky-400 bg-sky-500 py-6 px-10 text-2xl rounded-lg transition-all duration-200
