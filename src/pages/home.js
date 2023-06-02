@@ -20,8 +20,8 @@ const Home = () => {
         title: "General Manager"
     }, {
         name: 'Mouth of the South', 
-        english: 'Is really good', 
-        spanish: "es muy bien",
+        english: 'I always know that I can come back to a clean restaurant with Maribels Cleaning Service. I am extremely pleased with the work they do and will continue to use them as my preferred cleaning service!', 
+        spanish: "Siempre sé que puedo volver a un restaurante limpio con el Servicio de Limpieza de Maribels. ¡Estoy extremadamente complacido con el trabajo que hacen y continuaré usándolos como mi servicio de limpieza preferido!",
         manager: 'Samuel Voss',
         title: 'General Manager'
     }, 
