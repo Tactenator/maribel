@@ -42,7 +42,7 @@ const Contact = () => {
                         <img src={Telephone} alt="A telephone"  className="mx-auto"></img>
                         <div className='ml-1'>
                             <h1 className='text-2xl my-5 font-bold'>{language === "English" ? "Phone" : "Teléfono"}</h1>
-                            <a href="tel:4022037491" className="text-2xl font-Afterglow hover:underline">402-203-7491</a>
+                            <a href="tel:4029052642" className="text-2xl font-Afterglow hover:underline">402-905-2642</a>
                         </div>
                     </div>
                     <div id="info" className="text-center md:text-left mb-10 md:mb-0">
