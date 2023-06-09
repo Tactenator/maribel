@@ -45,7 +45,8 @@ const Footer = () => {
                     <ul>
                         <li className="mb-5">{language === "English" ? "Cash" : "Dinero en efectivo"}</li>
                         <li className="mb-5">{language === "English" ? "Checks" : "Cheques"}</li>
-                        <li className='text-sm'>{language === "English" ? "*No Apple Pay or Venmo at this time" : "*No Apple Pay o Venmo en este momento"}</li>
+                        <li className="mb-5">Venmo</li>
+                        <li className='text-sm'>{language === "English" ? "*No Apple Pay at this time" : "*No Apple Pay en este momento"}</li>
                     </ul>
                 </div>
             </div>
